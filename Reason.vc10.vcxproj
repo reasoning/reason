@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugLIB|Win32">
+      <Configuration>DebugLIB</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugLIB|x64">
+      <Configuration>DebugLIB</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLIB|Win32">
+      <Configuration>ReleaseLIB</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLIB|x64">
+      <Configuration>ReleaseLIB</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{47106219-7669-47DA-B438-E3A1EA2A8D01}</ProjectGuid>
+    <RootNamespace>Reason</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>Reason</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug Library|x64'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release Library|x64'">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">build\Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">build\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">build\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">build\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'">build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'">build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'">build\Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'">build\Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'">build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'">build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'">build\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'">build\Release\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Library|x64'">build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Library|x64'">build\Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Library|x64'">build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Library|x64'">build\Release\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release Library|x64'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\lib;.\lib\zlib\include;.\lib\openssl\include;.\lib\sqlite\include;.\lib\mysql\include;.\lib\postgres\include;.\lib\deelx\include;.\lib\ruby\include;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Reason.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\lib\sqlite;.\lib\openssl;.\lib\mysql;.\lib\zlib;.\lib\postgres;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Reason.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:\Reason\Reason\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\lib;.\lib\zlib\include;.\lib\openssl\include;.\lib\sqlite\include;.\lib\mysql\include;.\lib\postgres\include;.\lib\deelx\include;.\lib\ruby\include;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Reason.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\lib\sqlite;.\lib\openssl;.\lib\mysql;.\lib\zlib;.\lib\postgres;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Reason.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:\Reason\Reason\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\lib;.\lib\zlib\include;.\lib\openssl\include;.\lib\sqlite\include;.\lib\mysql\include;.\lib\postgres\include;.\lib\deelx\include;.\lib\ruby\include;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Reason.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\lib\sqlite;.\lib\openssl;.\lib\mysql;.\lib\zlib;.\lib\postgres;.\lib\ruby;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\lib;.\lib\zlib\include;.\lib\openssl\include;.\lib\sqlite\include;.\lib\mysql\include;.\lib\postgres\include;.\lib\deelx\include;.\lib\ruby\include;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Reason.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\lib\sqlite;.\lib\openssl;.\lib\mysql;.\lib\zlib;.\lib\postgres;.\lib\ruby;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\lib;.\lib\zlib\include;.\lib\openssl\include;.\lib\sqlite\include;.\lib\mysql\include;.\lib\postgres\include;.\lib\deelx\include;.\lib\ruby\include;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib\sqlite;.\lib\openssl;.\lib\mysql;.\lib\zlib;.\lib\postgres;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) $(ProjectDir)</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:\Reason\Reason\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\lib;.\lib\zlib\include;.\lib\openssl\include;.\lib\sqlite\include;.\lib\mysql\include;.\lib\postgres\include;.\lib\deelx\include;.\lib\ruby\include;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib\sqlite;.\lib\openssl;.\lib\mysql;.\lib\zlib;.\lib\postgres;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) $(ProjectDir)
+copy $(TargetDir)$(TargetName).pdb $(ProjectDir)</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:\Reason\Reason\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\lib;.\lib\zlib\include;.\lib\openssl\include;.\lib\sqlite\include;.\lib\mysql\include;.\lib\postgres\include;.\lib\deelx\include;.\lib\ruby\include;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib\sqlite;.\lib\openssl;.\lib\mysql;.\lib\zlib;.\lib\postgres;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) $(ProjectDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\lib;.\lib\zlib\include;.\lib\openssl\include;.\lib\sqlite\include;.\lib\mysql\include;.\lib\postgres\include;.\lib\deelx\include;.\lib\ruby\include;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib\sqlite;.\lib\openssl;.\lib\mysql;.\lib\zlib;.\lib\postgres;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) $(ProjectDir)</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Library|x64'">
+    <ClCompile>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Library|x64'">
+    <ClCompile>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib\sqlite;.\lib\openssl;.\lib\mysql;.\lib\zlib;.\lib\postgres;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\reason\export.cpp" />
+    <ClCompile Include="src\reason\reason.cpp" />
+    <ClCompile Include="src\reason\language\xml\document.cpp" />
+    <ClCompile Include="src\reason\language\xml\dtd.cpp" />
+    <ClCompile Include="src\reason\language\xml\dtdparser.cpp" />
+    <ClCompile Include="src\reason\language\xml\dtdreader.cpp" />
+    <ClCompile Include="src\reason\language\xml\enumerator.cpp" />
+    <ClCompile Include="src\reason\language\xml\markup.cpp" />
+    <ClCompile Include="src\reason\language\xml\parser.cpp" />
+    <ClCompile Include="src\reason\language\xml\reader.cpp" />
+    <ClCompile Include="src\reason\language\xml\tools.cpp" />
+    <ClCompile Include="src\reason\language\xml\xml.cpp" />
+    <ClCompile Include="src\reason\language\bnf\bnf.cpp" />
+    <ClCompile Include="src\reason\language\regex\regex.cpp" />
+    <ClCompile Include="src\reason\language\xpath\xpath.cpp" />
+    <ClCompile Include="src\reason\structure\algorithm.cpp" />
+    <ClCompile Include="src\reason\structure\array.cpp" />
+    <ClCompile Include="src\reason\structure\collection.cpp" />
+    <ClCompile Include="src\reason\structure\comparable.cpp" />
+    <ClCompile Include="src\reason\structure\deque.cpp" />
+    <ClCompile Include="src\reason\structure\disposable.cpp" />
+    <ClCompile Include="src\reason\structure\enumerator.cpp" />
+    <ClCompile Include="src\reason\structure\hashable.cpp" />
+    <ClCompile Include="src\reason\structure\heap.cpp" />
+    <ClCompile Include="src\reason\structure\index.cpp" />
+    <ClCompile Include="src\reason\structure\intrinsic.cpp" />
+    <ClCompile Include="src\reason\structure\iterator.cpp" />
+    <ClCompile Include="src\reason\structure\list.cpp" />
+    <ClCompile Include="src\reason\structure\map.cpp" />
+    <ClCompile Include="src\reason\structure\policy.cpp" />
+    <ClCompile Include="src\reason\structure\property.cpp" />
+    <ClCompile Include="src\reason\structure\queue.cpp" />
+    <ClCompile Include="src\reason\structure\set.cpp" />
+    <ClCompile Include="src\reason\structure\stack.cpp" />
+    <ClCompile Include="src\reason\structure\table.cpp" />
+    <ClCompile Include="src\reason\structure\tree.cpp" />
+    <ClCompile Include="src\reason\structure\vector.cpp" />
+    <ClCompile Include="src\reason\structure\objects\objects.cpp" />
+    <ClCompile Include="src\reason\system\binary.cpp" />
+    <ClCompile Include="src\reason\system\bit.cpp" />
+    <ClCompile Include="src\reason\system\character.cpp" />
+    <ClCompile Include="src\reason\system\config.cpp" />
+    <ClCompile Include="src\reason\system\exception.cpp" />
+    <ClCompile Include="src\reason\system\file.cpp" />
+    <ClCompile Include="src\reason\system\folder.cpp" />
+    <ClCompile Include="src\reason\system\format.cpp" />
+    <ClCompile Include="src\reason\system\indices.cpp" />
+    <ClCompile Include="src\reason\system\interface.cpp" />
+    <ClCompile Include="src\reason\system\logic.cpp" />
+    <ClCompile Include="src\reason\system\number.cpp" />
+    <ClCompile Include="src\reason\system\object.cpp" />
+    <ClCompile Include="src\reason\system\output.cpp" />
+    <ClCompile Include="src\reason\system\parameter.cpp" />
+    <ClCompile Include="src\reason\system\parser.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\reason\system\path.cpp" />
+    <ClCompile Include="src\reason\system\primitive.cpp" />
+    <ClCompile Include="src\reason\system\properties.cpp" />
+    <ClCompile Include="src\reason\system\sequence.cpp" />
+    <ClCompile Include="src\reason\system\stat.cpp" />
+    <ClCompile Include="src\reason\system\storage\drive.cpp" />
+    <ClCompile Include="src\reason\system\stream.cpp" />
+    <ClCompile Include="src\reason\system\string.cpp" />
+    <ClCompile Include="src\reason\system\stringstream.cpp" />
+    <ClCompile Include="src\reason\system\text.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\reason\system\time.cpp" />
+    <ClCompile Include="src\reason\system\timer.cpp" />
+    <ClCompile Include="src\reason\system\tokenizer.cpp" />
+    <ClCompile Include="src\reason\system\type.cpp" />
+    <ClCompile Include="src\reason\system\security\security.cpp" />
+    <ClCompile Include="src\reason\system\storage\storage.cpp" />
+    <ClCompile Include="src\reason\system\encoding\encoding.cpp" />
+    <ClCompile Include="src\reason\system\encoding\mime.cpp" />
+    <ClCompile Include="src\reason\system\encoding\transcoder.cpp" />
+    <ClCompile Include="src\reason\system\logging\logging.cpp" />
+    <ClCompile Include="src\reason\network\link.cpp" />
+    <ClCompile Include="src\reason\network\resource.cpp" />
+    <ClCompile Include="src\reason\network\socket.cpp" />
+    <ClCompile Include="src\reason\network\socketstream.cpp" />
+    <ClCompile Include="src\reason\network\uri.cpp" />
+    <ClCompile Include="src\reason\network\url.cpp" />
+    <ClCompile Include="src\reason\network\http\http.cpp" />
+    <ClCompile Include="src\reason\network\ftp\ftp.cpp" />
+    <ClCompile Include="src\reason\network\smtp\smtp.cpp" />
+    <ClCompile Include="src\reason\messaging\bind.cpp" />
+    <ClCompile Include="src\reason\messaging\callback.cpp" />
+    <ClCompile Include="src\reason\messaging\callchain.cpp" />
+    <ClCompile Include="src\reason\messaging\event.cpp" />
+    <ClCompile Include="src\reason\messaging\signal.cpp" />
+    <ClCompile Include="src\reason\generic\generic.cpp" />
+    <ClCompile Include="src\reason\generic\traits.cpp" />
+    <ClCompile Include="src\reason\platform\async.cpp" />
+    <ClCompile Include="src\reason\platform\atomic.cpp" />
+    <ClCompile Include="src\reason\platform\ipc.cpp" />
+    <ClCompile Include="src\reason\platform\platform.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\reason\platform\process.cpp" />
+    <ClCompile Include="src\reason\platform\thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\reason\export.h" />
+    <ClInclude Include="src\reason\reason.h" />
+    <ClInclude Include="src\reason\language\xml\document.h" />
+    <ClInclude Include="src\reason\language\xml\dtd.h" />
+    <ClInclude Include="src\reason\language\xml\dtdparser.h" />
+    <ClInclude Include="src\reason\language\xml\dtdreader.h" />
+    <ClInclude Include="src\reason\language\xml\enumerator.h" />
+    <ClInclude Include="src\reason\language\xml\markup.h" />
+    <ClInclude Include="src\reason\language\xml\parser.h" />
+    <ClInclude Include="src\reason\language\xml\reader.h" />
+    <ClInclude Include="src\reason\language\xml\tools.h" />
+    <ClInclude Include="src\reason\language\xml\xml.h" />
+    <ClInclude Include="src\reason\language\bnf\bnf.h" />
+    <ClInclude Include="src\reason\language\regex\regex.h" />
+    <ClInclude Include="src\reason\language\xpath\xpath.h" />
+    <ClInclude Include="src\reason\structure\algorithm.h" />
+    <ClInclude Include="src\reason\structure\array.h" />
+    <ClInclude Include="src\reason\structure\collection.h" />
+    <ClInclude Include="src\reason\structure\comparable.h" />
+    <ClInclude Include="src\reason\structure\deque.h" />
+    <ClInclude Include="src\reason\structure\disposable.h" />
+    <ClInclude Include="src\reason\structure\enumerator.h" />
+    <ClInclude Include="src\reason\structure\functional.h" />
+    <ClInclude Include="src\reason\structure\hashable.h" />
+    <ClInclude Include="src\reason\structure\heap.h" />
+    <ClInclude Include="src\reason\structure\index.h" />
+    <ClInclude Include="src\reason\structure\intrinsic.h" />
+    <ClInclude Include="src\reason\structure\iterator.h" />
+    <ClInclude Include="src\reason\structure\list.h" />
+    <ClInclude Include="src\reason\structure\map.h" />
+    <ClInclude Include="src\reason\structure\policy.h" />
+    <ClInclude Include="src\reason\structure\property.h" />
+    <ClInclude Include="src\reason\structure\queue.h" />
+    <ClInclude Include="src\reason\structure\set.h" />
+    <ClInclude Include="src\reason\structure\stack.h" />
+    <ClInclude Include="src\reason\structure\table.h" />
+    <ClInclude Include="src\reason\structure\tree.h" />
+    <ClInclude Include="src\reason\structure\vector.h" />
+    <ClInclude Include="src\reason\structure\objects\objects.h" />
+    <ClInclude Include="src\reason\system\binary.h" />
+    <ClInclude Include="src\reason\system\bit.h" />
+    <ClInclude Include="src\reason\system\character.h" />
+    <ClInclude Include="src\reason\system\config.h" />
+    <ClInclude Include="src\reason\system\exception.h" />
+    <ClInclude Include="src\reason\system\file.h" />
+    <ClInclude Include="src\reason\system\folder.h" />
+    <ClInclude Include="src\reason\system\format.h" />
+    <ClInclude Include="src\reason\system\indices.h" />
+    <ClInclude Include="src\reason\system\interface.h" />
+    <ClInclude Include="src\reason\system\logic.h" />
+    <ClInclude Include="src\reason\system\macro.h" />
+    <ClInclude Include="src\reason\system\number.h" />
+    <ClInclude Include="src\reason\system\object.h" />
+    <ClInclude Include="src\reason\system\output.h" />
+    <ClInclude Include="src\reason\system\parameter.h" />
+    <ClInclude Include="src\reason\system\parser.h" />
+    <ClInclude Include="src\reason\system\path.h" />
+    <ClInclude Include="src\reason\system\primitive.h" />
+    <ClInclude Include="src\reason\system\properties.h" />
+    <ClInclude Include="src\reason\system\sequence.h" />
+    <ClInclude Include="src\reason\system\stat.h" />
+    <ClInclude Include="src\reason\system\storage\drive.h" />
+    <ClInclude Include="src\reason\system\stream.h" />
+    <ClInclude Include="src\reason\system\string.h" />
+    <ClInclude Include="src\reason\system\stringstream.h" />
+    <ClInclude Include="src\reason\system\text.h" />
+    <ClInclude Include="src\reason\system\time.h" />
+    <ClInclude Include="src\reason\system\timer.h" />
+    <ClInclude Include="src\reason\system\tokenizer.h" />
+    <ClInclude Include="src\reason\system\type.h" />
+    <ClInclude Include="src\reason\system\security\security.h" />
+    <ClInclude Include="src\reason\system\storage\storage.h" />
+    <ClInclude Include="src\reason\system\encoding\encoding.h" />
+    <ClInclude Include="src\reason\system\encoding\mime.h" />
+    <ClInclude Include="src\reason\system\encoding\transcoder.h" />
+    <ClInclude Include="src\reason\system\logging\logging.h" />
+    <ClInclude Include="src\reason\network\link.h" />
+    <ClInclude Include="src\reason\network\resource.h" />
+    <ClInclude Include="src\reason\network\socket.h" />
+    <ClInclude Include="src\reason\network\socketstream.h" />
+    <ClInclude Include="src\reason\network\uri.h" />
+    <ClInclude Include="src\reason\network\url.h" />
+    <ClInclude Include="src\reason\network\http\http.h" />
+    <ClInclude Include="src\reason\network\ftp\ftp.h" />
+    <ClInclude Include="src\reason\network\smtp\smtp.h" />
+    <ClInclude Include="src\reason\messaging\bind.h" />
+    <ClInclude Include="src\reason\messaging\callback.h" />
+    <ClInclude Include="src\reason\messaging\callchain.h" />
+    <ClInclude Include="src\reason\messaging\event.h" />
+    <ClInclude Include="src\reason\messaging\signal.h" />
+    <ClInclude Include="src\reason\generic\generic.h" />
+    <ClInclude Include="src\reason\generic\traits.h" />
+    <ClInclude Include="src\reason\platform\async.h" />
+    <ClInclude Include="src\reason\platform\atomic.h" />
+    <ClInclude Include="src\reason\platform\ipc.h" />
+    <ClInclude Include="src\reason\platform\platform.h" />
+    <ClInclude Include="src\reason\platform\process.h" />
+    <ClInclude Include="src\reason\platform\thread.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
